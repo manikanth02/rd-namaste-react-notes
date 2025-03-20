@@ -57,12 +57,15 @@ The choice between these export methods depends on our use case and coding style
 ---
 
 ### Q: What is the importance of `config.js` file?
-A: `Config.js` files are text files that hold essential program information. They are structured for user configuration. Many programs, such as office suites and web browsers, rely on menu-driven configurations. These files typically follow a simple structure, often using key-value pairs for settings. For instance, if an application only needs to store a user's preferred name, the config file might look like this:
+```
+A: `Config.js` files are text files that hold essential program information.A config.js (short for configuration) file is like a settings file for an application. Instead of changing the code every time you want to adjust how the app works, you can simply update values in this file.
+
+suppose we are using user name,apiKey at different places in websites and for some reason we need to change it then we need to change to all places where are defining and using it and it cause so many inconvenince and suppose we have define username and userkey at one place and where we need it we should directly import it and when there is any changes in username and apiKey we need to chaneg at only one place
 
 However, most applications require multiple settings, so config files often contain key-value pairs for various options:
-```
-NAME='Divya'
-SURNAME='Reddy'
+
+name:"manilanth",
+apikey:#dhjjhdsyjdys89239839389382
 ```
 ---
 
